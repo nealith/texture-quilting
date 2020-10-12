@@ -43,7 +43,7 @@ Transfer a generated texture from a sample on an element of the image.
 
 To test this program, a function is required as a parameter.
 This function is used to create a mask from two images, the input texture and the image containing the object we want to transfer the texture on.
-Currently the function is used to transfer a grass texture on the red metal of a ferarri.
+Currently the function is used to transfer a grass texture on the red metal of a ferrari.
 
 ## Results
 
