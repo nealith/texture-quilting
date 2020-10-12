@@ -1,8 +1,10 @@
 # TextureQuilting
 
-A student project done in 2017-2018, based on *Image Quilting for Texture Synthesis and Transfer* from Alexei A. Efros and William T. Freeman.
+TextureQuilting is a student project done in 2017-2018, based on *Image Quilting for Texture Synthesis and Transfer* from Alexei A. Efros and William T. Freeman.
 
-Made by [fonspa](https://github.com/fonspa), [Hyanaki](https://github.com/Hyanaki), [biscotteman](https://github.com/biscotteman) and me
+Made by [fonspa](https://github.com/fonspa), [Hyanaki](https://github.com/Hyanaki), [biscotteman](https://github.com/biscotteman) and me.
+
+A short video to explain the process of the algorithm was realized: https://www.youtube.com/watch?v=BAO97-96f84
 
 ## Requirements :
 
@@ -23,11 +25,11 @@ $ make
 
 ## To use :
 
-Both of executable are test programm. If you want to change parameters, you have to change de code of each one.
+Both Texture Synthesis and Generation are executable for testing program. To change parameters, code modification is necessary.
 
 ### Texture Synthesis
 
-Generate a 1024x1024 texture from a sample.
+From a sample image, a texture 1024x1024 is generated.
 
 ```bash
 
@@ -37,11 +39,11 @@ $ ./testWeathering <image path>
 
 ### Texture Generation
 
-Transfert a gerated texture from a sample on a element in a output image
+Transfer a generated texture from a sample on an element of the image.
 
-This test program is more complicated, in fact, the programm need a function as parameter to create transfert mask from the input texture and the output image (the function do the both, since you can test if the input parameter is the texture or the output image )
-
-Currently the function is the function use to transfert a texture of grass on the red metal of a ferarri.
+To test this program, a function is required as a parameter.
+This function is used to create a mask from two images, the input texture and the image containing the object we want to transfer the texture on.
+Currently the function is used to transfer a grass texture on the red metal of a ferarri.
 
 ## Results
 
